@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Chau Tinh Tri Movies</string>
+    
+    <string name="copyright">© 2014 Admega.vn.</string>
+    <string name="layout_banner">ca-app-pub-1214276490829950/1631437420</string>
+    <string name="Admob_banner">ca-app-pub-1214276490829950/1631437420</string>
+    <string name="Admob_full_banner">ca-app-pub-1214276490829950/1631437420</string>
+    <string name="gatracking">UA-51554009-23</string>
+    <string name="cache">media</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_yes">Yes</string>
+    <string name="title_no">No</string>
+    <string name="title_ok">OK</string>
+    <string name="title_cancel">Cancel</string>
+    <string name="title_info">Information</string>
+    <string name="title_confirm">Confirm</string>
+    <string name="title_warning">Warning</string>
+    <string name="quit_message">Do you want to quit this application?</string>
+    <string name="title_warning_close">Exit</string>
+    <string name="info_lose_internet">No internet connection.Please check again!</string>
+    <string name="info_empty">Name, Phone/Email, Message can not empty!</string>
+    <string name="info_close_app">Do you want to exit the application?</string>
+    <string name="info_server_error">We can not connect to server.Please try again!</string>
+    <string name="info_login_facebook_error">Login facebook error!Try again</string>
+    <string name="info_login_twitter_error">Login twitter error!Try again</string>
+    <string name="loading">Please wait...</string>
+    <string name="title_search_playlist">Search Playlist</string>
+    <string name="title_search_video">Search Video</string>
+    <string name="info_no_video">There is no video in this playlist.Please try again later</string>
+    <string name="format_videos"><Data><![CDATA[%1$s videos]]></Data></string>
+    <string name="format_video"><Data><![CDATA[%1$s video]]></Data></string>
+    <string name="error_player">There was an error initializing the YouTubePlayer (%1$s)</string>
+    <string name="info_version_format">Version %1$s</string>
+
+</resources>

@@ -1,0 +1,141 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#222222" >
+
+    <com.google.android.youtube.player.YouTubePlayerView
+        android:id="@+id/player"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:id="@+id/layout_header"
+        android:layout_width="match_parent"
+        android:layout_height="60sp"
+        android:layout_below="@+id/player"
+        android:layout_marginLeft="5sp"
+        android:layout_marginRight="5sp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5sp"
+            android:layout_toLeftOf="@+id/tv_numbervideo"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="CBN Cambodia"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_copyright"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="CBNMedia"
+                android:textColor="#929292"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_numbervideo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:singleLine="true"
+            android:text="0/0"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_options"
+        android:layout_width="match_parent"
+        android:layout_height="60sp"
+        android:layout_below="@+id/layout_header"
+        android:layout_marginLeft="5sp"
+        android:layout_marginRight="5sp"
+        android:background="#444444" >
+
+        <TextView
+            android:id="@+id/tv_numbervideo1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5sp"
+            android:singleLine="true"
+            android:text="0 Videos"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btn_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/bt_next"
+            android:minHeight="1sp"
+            android:minWidth="1sp"
+            android:onClick="onClick" />
+
+        <Button
+            android:id="@+id/btn_prev"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/btn_next"
+            android:background="@drawable/bt_prev"
+            android:minHeight="1sp"
+            android:minWidth="1sp"
+            android:onClick="onClick" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/list_video"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/layout_footer"
+        android:layout_below="@+id/layout_options"
+        android:layout_marginLeft="5sp"
+        android:layout_marginRight="5sp"
+        android:divider="#606060"
+        android:dividerHeight="0.5sp"
+        android:scrollbars="none" >
+    </ListView>
+
+    <include
+        android:id="@+id/layout_footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5sp"
+        android:layout_above="@+id/layout_ad"
+        layout="@layout/footer_home"
+        android:visibility="gone" />
+
+    <RelativeLayout 
+        android:id="@+id/layout_ad"
+        android:layout_width="match_parent"
+        android:layout_height="80sp"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_horizontal" >
+        
+       <com.google.android.gms.ads.AdView
+            android:id="@+id/adView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            ads:adSize="BANNER"
+            ads:adUnitId="ca-app-pub-1214276490829950/2946720223" />
+    </RelativeLayout>
+
+</RelativeLayout>

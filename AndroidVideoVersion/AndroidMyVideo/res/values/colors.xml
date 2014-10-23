@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="black">#ff1e1e1e</color>
+    <color name="white">#ffffffff</color>
+    <color name="red">#ffff0000</color>
+    <color name="blue">#ff011864</color>
+    <color name="violet">#ff64015e</color>
+    <color name="grey">#ffeeeeee</color>
+    <color name="light_grey">#ff525255</color>
+    <color name="light_grey1">#ffeef0f1</color>
+    <color name="normal_tab1">#ff313133</color>
+    <color name="normal_tab2">#ff67696c</color>
+    <color name="cyan">#ff008eac</color>
+    <color name="yellow">#ffb18f06</color>
+
+</resources>
